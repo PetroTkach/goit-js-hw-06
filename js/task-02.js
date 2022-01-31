@@ -16,5 +16,5 @@ ingredients.forEach((element) => {
   navItemEl.classList.add("item");
   navItemEl.textContent = element;
   console.log(navItemEl);
-  navEl.append(navItemEl)
+  navEl.append(navItemEl);
 });
