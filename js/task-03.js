@@ -16,3 +16,13 @@ const images = [
 const navItemsEl = document.querySelector(".gallery");
 console.log(navItemsEl);
 
+const elements = images
+  .map(
+    (image) =>
+      `<li><img src = ${image.url} alt ='${image.alt}' width = 300 /></li>`
+  )
+  .join("");
+// console.log(elements)
+
+navItemsEl.insertAdjacentHTML("beforeend", elements);
+
