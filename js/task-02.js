@@ -8,12 +8,12 @@ const ingredients = [
 ];
 
 const navEl = document.querySelector("ul#ingredients");
-// console.log(navEl);
 
-ingredients.map((element) => {
+const newIngredients = ingredients.map((element) => {
   const navItemEl = document.createElement("li");
   navItemEl.classList.add("item");
   navItemEl.textContent = element;
-  // console.log(navItemEl);
-  navEl.append(navItemEl);
+  console.log(navItemEl);
+  return navItemEl;
 });
+navEl.append(...newIngredients);
