@@ -1,1 +1,1 @@
-# goit-js-hw-06
+https://petrotkach.github.io/goit-js-hw-06/
